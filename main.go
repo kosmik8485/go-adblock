@@ -18,7 +18,7 @@ type Addr struct {
 }
 
 func (addr Addr) to_str() string {
-    out := "local-zone: \"" + addr.host + ".\" redirect\nlocal-data: \"" + addr.host + ". IN A " + addr.ip + "\"\n"
+    out := "local-zone: \"" + addr.host + "\" redirect\nlocal-data: \"" + addr.host + " A " + addr.ip + "\"\n"
     return out
 }
 
